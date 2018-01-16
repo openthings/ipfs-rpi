@@ -2,9 +2,9 @@ FROM openthings/zrock_rpi
 
 MAINTAINER openthings <openthings@163.com>
 
-COPY ./. ~/
+COPY . /home/znet/ipfs
 
-RUN cd ~ && ./install
+RUN ./home/znet/ipfs/install
 
 EXPOSE 4001 5001 8080
 
